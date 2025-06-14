@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Journal - AgriTracker</title>
+  <link rel="stylesheet" href="journal.css">
+</head>
+<body>
+
+  <!-- Barre latérale -->
+  <aside class="sidebar">
+    <div class="logo-container">
+      <img src="Logo agro.jpg" alt="AgriTracker">
+    </div>
+    <nav class="nav-links">
+      <a href="dashboard.html">🏠 Dashboard</a>
+      <a href="cultures.html">🌿 Mes Cultures</a>
+      <a href="journal.html" class="active">📝 Journal</a>
+      <a href="#">📈 Statistiques</a>
+      <a href="#">☀️ Météo</a>
+      <a href="parametres.html">⚙️ Paramètres</a>
+    </nav>
+  </aside>
+
+  <!-- Contenu principal -->
+  <main class="main-content">
+    <header class="topbar">
+      <h1>📘 Journal d’activités agricoles</h1>
+      <button class="add-btn">➕ Nouvelle entrée</button>
+      <!-- Formulaire pour ajouter une nouvelle entrée -->
+<section class="add-journal-form" id="journalForm">
+  <h2>Ajouter une activité 📘</h2>
+  <form id="formJournal">
+    <label for="titre">Titre de l’activité</label>
+    <input type="text" id="titre" required>
+
+    <label for="date">Date</label>
+    <input type="date" id="date" required>
+
+    <label for="description">Description</label>
+    <textarea id="description" rows="4" required></textarea>
+
+    <button type="submit">✅ Ajouter au journal</button>
+  </form>
+</section>
+
+    </header>
+
+    <!-- Liste des entrées de journal -->
+    <section class="journal-entries">
+      <div class="entry">
+        <h3>🌱 Semis de maïs</h3>
+        <p><strong>Date :</strong> 10 juin 2025</p>
+        <p><strong>Description :</strong> Semis de maïs effectué sur 2 ha avec tracteur.</p>
+      </div>
+
+      <div class="entry">
+        <h3>💧 Arrosage automatique</h3>
+        <p><strong>Date :</strong> 11 juin 2025</p>
+        <p><strong>Description :</strong> Système d'irrigation enclenché pendant 4 heures.</p>
+      </div>
+      <div class="entry">
+  <h3>🧪 Traitement phytosanitaire</h3>
+  <p><strong>Date :</strong> 12 juin 2025</p>
+  <p><strong>Description :</strong> Application d’un traitement bio contre les parasites sur les plants de tomates. Aucun produit chimique utilisé.</p>
+</div>
+
+
+      <!-- Tu peux ajouter d'autres entrées ici -->
+    </section>
+  </main>
+  <script>
+  // Affichage/masquage du formulaire
+  document.querySelector('.add-btn').addEventListener('click', () => {
+    const form = document.getElementById('journalForm');
+    form.style.display = (form.style.display === 'none' || form.style.display === '') ? 'block' : 'none';
+  });
+
+  // Gestion de l'ajout d'entrée
+  document.getElementById('formJournal').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const titre = document.getElementById('titre').value;
+    const date = document.getElementById('date').value;
+    const description = document.getElementById('description').value;
+
+    const newEntry = document.createElement('div');
+    newEntry.classList.add('entry');
+    newEntry.innerHTML = `
+      <h3>🆕 ${titre}</h3>
+      <p><strong>Date :</strong> ${date}</p>
+      <p><strong>Description :</strong> ${description}</p>
+    `;
+
+    document.querySelector('.journal-entries').prepend(newEntry); // Ajout en haut
+    this.reset(); // Réinitialise le formulaire
+    document.getElementById('journalForm').style.display = 'none'; // Cache le formulaire
+  });
+</script>
+
+
+</body>
+</html>

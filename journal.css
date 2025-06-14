@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 230px;
+  background-color: #2e7d32;
+  color: white;
+  min-height: 100vh;
+  padding: 20px 15px;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-container img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #388e3c;
+}
+
+/* === Contenu principal === */
+.main-content {
+  flex: 1;
+  padding: 25px;
+  background: #f5fff3;
+}
+
+/* === Topbar === */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.topbar h1 {
+  color: #2e7d32;
+}
+
+.add-btn {
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  background-color: #558b2f;
+}
+
+/* === Journal entries === */
+.journal-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.entry {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #2e7d32;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.entry h3 {
+  margin-top: 0;
+  color: #388e3c;
+}
+
+.entry p {
+  margin: 5px 0;
+  color: #444;
+}
+.add-journal-form {
+  display: none;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+}
+
+.add-journal-form h2 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+
+.add-journal-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.add-journal-form input,
+.add-journal-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.add-journal-form button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-journal-form button:hover {
+  background-color: #1b5e20;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes Cultures - AgriTracker</title>
+  <link rel="stylesheet" href="cultures.css">
+</head>
+<body>
+
+  <!-- Barre latérale gauche -->
+  <aside class="sidebar">
+    <div class="logo-container">
+      <img src="Logo agro.jpg" alt="AgriTracker">
+    </div>
+    <nav class="nav-links">
+      <a href="dashboard.html">🏠 Dashboard</a>
+      <a href="cultures.html" class="active">🌿 Mes Cultures</a>
+      <a href="journal.html">📝 Journal</a>
+      <a href="statistiques.html">📈 Statistiques</a>
+      <a href="meteo.html">☀️ Météo</a>
+      <a href="parametres.html">⚙️ Paramètres</a>
+    </nav>
+  </aside>
+
+  <!-- Contenu principal -->
+  <main class="main-content">
+    <header class="topbar">
+      <h1>🌾 Mes Cultures</h1>
+      <button class="add-btn">➕ Ajouter une culture</button>
+      <!-- Formulaire d'ajout de culture (caché au départ) -->
+<section class="add-form-container" id="addForm">
+  <h2>Ajouter une nouvelle culture 🌱</h2>
+  <form>
+    <label for="nom">Nom de la culture</label>
+    <input type="text" id="nom" required>
+
+    <label for="superficie">Superficie (en ha)</label>
+    <input type="number" id="superficie" required>
+
+    <label for="date">Date de début</label>
+    <input type="date" id="date" required>
+
+    <label for="etat">État de la culture</label>
+    <input type="text" id="etat" required>
+
+    <label for="image">Image (lien ou nom de fichier)</label>
+    <input type="text" id="image">
+
+    <button type="submit">✅ Ajouter</button>
+  </form>
+</section>
+
+    </header>
+
+    <section class="cultures-container">
+      <div class="culture-card">
+        <img src="mais.jpg" alt="Champ de maïs">
+        <div class="info">
+          <h3>🌽 Maïs</h3>
+          <p><strong>Superficie :</strong> 2 ha</p>
+          <p><strong>Démarré le :</strong> 15 mai 2025</p>
+          <p><strong>État :</strong> En croissance</p>
+          <a href="#">Voir détails</a>
+        </div>
+      </div>
+
+      <div class="culture-card">
+        <img src="riz.jpeg" alt="Champ riz">
+        <div class="info">
+          <h3>🌾 Riz</h3>
+          <p><strong>Superficie :</strong> 1.5 ha</p>
+          <p><strong>Démarré le :</strong> 01 juin 2025</p>
+          <p><strong>État :</strong> Germination</p>
+          <a href="#">Voir détails</a>
+        </div>
+      </div>
+
+      <!-- Ajoute plus de cultures ici -->
+    </section>
+  
+  </main>
+  <script>
+  document.querySelector('.add-btn').addEventListener('click', () => {
+    const form = document.getElementById('addForm');
+    form.style.display = (form.style.display === 'none' || form.style.display === '') ? 'block' : 'none';
+  });
+</script>
+
+</body>
+</html>
