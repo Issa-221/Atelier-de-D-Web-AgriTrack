@@ -1,4 +1,4 @@
-# Atelier-de-D-Web-AgriTrack
+# Atelier-de-D-Web-AgriTrack 
 Nom de la solution : AgriTrack - Outil de Suivi de Production Agricole.
 
 Objectif du projet : Permettre aux agriculteurs de suivre, gérer et optimiser leur production agricole via une application web intuitive.
@@ -13,11 +13,10 @@ Membres du groupe :
 Technologies utilisees : HTML / CSS / JavaScript
                          /Git & GitHub
                          /Trello
-
                          
 Lien vers Trello : [AgriTrack - Tableau Trello](https://trello.com/b/VLvgZBSY/agritrack-agricultural-production-tracking)
 
-Captures d'ecran : ## 📸 Aperçu de l'application
+## 📸 Aperçu de l'application
 
 ### 🏠 Accueil
 ![Accueil](./images/Capture_Accueil.png)
