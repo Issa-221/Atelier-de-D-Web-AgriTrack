@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: #f0fff4;
+}
+
+.dashboard-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar à gauche fixe */
+.sidebar {
+  width: 230px;
+  background: #388e3c;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.2s;
+  display: block;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #2e7d32;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-container img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Contenu principal à droite */
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* Cartes en colonne, pleine largeur */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  width: 100%; /* Pleine largeur */
+  background-color: #ffffff;
+  border-left: 6px solid #66bb6a;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card h3 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #2e7d32;
+}
+
+/* Grands graphiques */
+canvas {
+  width: 100% !important;
+  height: 320px !important;
+}
+
+.quote {
+  font-style: italic;
+  text-align: center;
+  color: #4caf50;
+  font-size: 1rem;
+  margin-top: 40px;
+}
