@@ -17,35 +17,33 @@ Technologies utilisees : HTML / CSS / JavaScript
                          
 Lien vers Trello : [AgriTrack - Tableau Trello](https://trello.com/b/VLvgZBSY/agritrack-agricultural-production-tracking)
 
-Captures d'ecran : ## 📸 Aperçu de l'application
-
+Captures d'ecran du projet:
 ### 🏠 Accueil
-![Accueil](./images/Capture%20Accueil.png)
+![Accueil](./images/Capture_Accueil.png)
 
 ### 🙋‍♂️ À propos
-![A propos](./images/Capture%20A%20propos.png)
+![A propos](./images/Capture_A_propos.png)
 
 ### 🆘 Aide
-![Aide](./images/Capture%20Aide.png)
+![Aide](./images/Capture_Aide.png)
 
 ### 📊 Dashboard
-![Dashboard](./images/Capture%20Dashboard.png)
+![Dashboard](./images/Capture_Dashboard.png)
 
 ### 📘 Journal
-![Journal](./images/Capture%20Journal.png)
+![Journal](./images/Capture_Journal.png)
 
 ### 🌾 Mes Cultures
-![Mes cultures](./images/Capture%20mes%20cultures.png)
+![Mes cultures](./images/Capture_mes_cultures.png)
 
 ### ⚙️ Paramètres (1)
-![Paramètres 1](./images/Capture%20Parametres%201.png)
+![Paramètres 1](./images/Capture_Parametres_1.png)
 
 ### ⚙️ Paramètres (2)
-![Paramètres 2](./images/Capture%20Parametres%202.png)
+![Paramètres 2](./images/Capture_Parametres_2.png)
 
 ### 🔐 Se connecter
-![Se connecter](./images/Capture%20se%20connecter.png)
+![Se connecter](./images/Capture_se_connecter.png)
 
 ### 📝 S'inscrire
-![S'inscrire](./images/Capture%20s%27inscrire.png)
-
+![S'inscrire](./images/Capture_s_inscrire.png)
