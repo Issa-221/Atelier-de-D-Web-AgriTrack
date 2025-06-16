@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -136,6 +137,145 @@ body {
     transform: translateY(0);
   }
 }
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: #f0fff4;
+}
+
+.dashboard-container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 230px;
+  background: #388e3c;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.2s;
+  display: block;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #2e7d32;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-container img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.alerts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.alert .icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.alert .message {
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.alert .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.alert.info {
+  background-color: #e3f2fd;
+  color: #2196f3;
+}
+
+.alert.success {
+  background-color: #c8e6c9;
+  color: #388e3c;
+}
+
+.alert.warning {
+  background-color: #fff3e0;
+  color: #ff9800;
+}
+
+.alert.error {
+  background-color: #ffebee;
+  color: #f44336;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+>>>>>>> 817915e124447dd9c76e3c9903d51bb61e8afc60
 =======
 * {
   margin: 0;

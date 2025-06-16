@@ -37,7 +37,9 @@ Lien vers Trello : [AgriTrack - Tableau Trello](https://trello.com/b/VLvgZBSY/ag
 ![Mes cultures](./images/Capture_mes_cultures.png)
 
 ### ⚙️ Paramètres (1)
-![Paramètres 1] (./images/Captures_
+
+![Paramètres 1](./images/Capture_Parametres_1.png)
+>>>>>>> 817915e124447dd9c76e3c9903d51bb61e8afc60
 
 ### ⚙️ Paramètres (2)
 ![Paramètres 2](./images/Capture_Parametres_2.png)
