@@ -16,36 +16,3 @@ Technologies utilisees : HTML / CSS / JavaScript
                          
 Lien vers Trello : [AgriTrack - Tableau Trello](https://trello.com/b/VLvgZBSY/agritrack-agricultural-production-tracking)
 
-## 📸 Aperçu de l'application
-
-### 🏠 Accueil
-![Accueil](./images/Capture_Accueil.png)
-
-### 🙋‍♂️ À propos
-![A propos](./images/Capture_A_propos.png)
-
-### 🆘 Aide
-![Aide](./images/Capture_Aide.png)
-
-### 📊 Dashboard
-![Dashboard](./images/Capture_Dashboard.png)
-
-### 📘 Journal
-![Journal](./images/Capture_Journal.png)
-
-### 🌾 Mes Cultures
-![Mes cultures](./images/Capture_mes_cultures.png)
-
-### ⚙️ Paramètres (1)
-
-![Paramètres 1](./images/Capture_Parametres_1.png)
->>>>>>> 817915e124447dd9c76e3c9903d51bb61e8afc60
-
-### ⚙️ Paramètres (2)
-![Paramètres 2](./images/Capture_Parametres_2.png)
-
-### 🔐 Se connecter
-![Se connecter](./images/Capture_se_connecter.png)
-
-### 📝 S'inscrire
-![S'inscrire](./images/Capture_s_inscrire.png)
